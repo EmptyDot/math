@@ -114,10 +114,11 @@ def main(data: list):
     return merge(sort_groups(split(data)))
 
 
-d = list(range(10000))
-random.shuffle(d)
+if __name__ == "__main__":
+    d = list(range(10000))
+    random.shuffle(d)
 
-main(d)
+    print(main(d))
 
 
 
